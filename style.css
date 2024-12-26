@@ -1,0 +1,333 @@
+:root {
+    /* COLORS */
+
+        /* Primary */
+    --soft-red: hsl(7, 99%, 70%);
+    --yellow: hsl(51, 100%, 49%);
+    --dark-cyan-graphic-design-text: hsl(167, 40%, 24%);
+    --dark-blue-photography-text: hsl(198, 62%, 26%);
+    --dark-moderate-cyan-footer: hsl(168, 34%, 41%);
+
+        /* Neutral */
+    --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+    --very-dark-grayish-blue: hsl(213, 9%, 39%);
+    --dark-grayish-blue: hsl(232, 10%, 55%);
+    --grayish-blue: hsl(210, 4%, 67%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+img {
+    width: 100%;
+}
+h1, h2, h3 {
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+}
+
+body {
+    font-family: "Barlow", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+
+.header {
+    background-color: #3EBFFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em;
+    position: relative;
+}
+
+.navigation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 300px;
+    margin: 0;
+    background-color: var(--white);
+}
+
+.menu__items {
+    margin-block: 1.2em;
+    text-align: center;
+}
+.menu__items a {
+    color: var(--dark-grayish-blue);
+    display: inline-block;
+    text-align: center;
+}
+
+.hero-section {
+    background: url(images/mobile/image-header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 80vh;
+    background-size: cover;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero_section_content {
+    max-width: 750px;
+    text-align: center;
+    margin-inline: auto;
+}
+
+.header-text {
+    font-size: clamp(50px, 10vw, 200px);
+    color: var(--white);
+    text-transform: uppercase;
+    padding-block: 50px;
+}
+
+.hero_section_content img{
+    max-width: 40px;
+    margin-bottom: 50px;
+}
+
+.feature__description {
+    padding: 1.5em;
+    text-align: center;
+}
+
+.feature__description h2 {
+    font-size: clamp(20px, 10vw, 200px);
+    margin-block: .6em;
+    color: var(--very-dark-desaturated-blue);
+}
+
+.feature__description p {
+    color: var(--very-dark-grayish-blue);
+    line-height: 1.7;
+    max-width: 550px;
+    text-align: center;
+    margin-inline: auto;
+}
+
+.feature__description a {
+    text-transform: uppercase;
+    font-family: "Fraunces", serif;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: var(--very-dark-desaturated-blue);
+    display: inline-block;
+    margin-block: 1em;
+    font-size: 16px;
+    position: relative;
+}
+
+.feature__description .egg__link::before{
+    content: "";
+    position: absolute;
+    right: -5px;
+    bottom: 1px;
+    height: 10px;
+    width: 135px;
+    border-radius: 12px;
+    background-color: var(--yellow);
+    opacity: .3;
+    z-index: -1;
+}
+.egg__link:hover::before {
+    opacity: 1;
+}
+.feature__description .pink-cup__link::before{
+    content: "";
+    position: absolute;
+    right: -5px;
+    bottom: 1px;
+    height: 10px;
+    width: 135px;
+    border-radius: 12px;
+    background-color: var(--soft-red);
+    opacity: .3;
+    z-index: -1;
+}
+.pink-cup__link:hover::before {
+    opacity: 1;
+}
+
+.feature__cherry, .feature__orange {
+    position: relative;
+}
+
+.feature__orange {
+    margin-top: -5px;
+}
+
+.graphic__design__description, .photography__description {
+    position: absolute;
+    bottom: 80px;
+    z-index: 1;
+    text-align: center;
+}
+
+.graphic__design__description h2, .photography__description h2 {
+    margin-bottom: .8em;
+    font-size: clamp(36px, 5vw, 9em);
+}
+
+.graphic__design__description p, .photography__description {
+    margin-inline: auto;
+    max-width: 800px;
+}
+
+.graphic__design__description {
+    color: var(--dark-cyan-graphic-design-text);
+}
+.photography__description {
+    color: var(--dark-blue-photography-text);
+}
+
+.testimonials {
+    padding: 1.5em;
+    text-align: center;
+}
+
+.testimonials h2 {
+    color: var(--dark-grayish-blue);
+    letter-spacing: 3.5px;
+    margin-block: 1.5em;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.testimony {
+    margin-block: 3em;
+}
+
+.testimony img {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    margin-block: 1.5em;
+}
+
+.testimony blockquote {
+    margin-bottom: 1.5em;
+    color: var(--very-dark-grayish-blue);
+    line-height: 1.5;
+    max-width: 500px;
+    text-align: center;
+    margin-inline: auto;
+}
+
+.profile__name {
+    margin-bottom: .5em;
+    font-family: "Fraunces", serif;
+}
+
+.profile__occupation {
+    color: var(--dark-grayish-blue);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.gallery picture:nth-child(3), .gallery picture:nth-child(4) {
+    margin-top: -4px;
+}
+
+.footer {
+    background-color: #90D4C5;
+    margin-top: -5px;
+    padding: 2em;
+    text-align: center;
+}
+
+.footer__logo {
+    width: 150px;
+    margin-block: 1em;
+}
+
+.footer ul {
+    display: flex;
+    justify-content: space-between;
+    margin-block: 1em;
+    font-weight: 600;
+}
+
+.footer a {
+    color: var(--dark-moderate-cyan-footer);
+}
+
+.footer a:hover {
+    color: var(--white);
+}
+
+.footer__social__icons {
+    margin-top: 5em;
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+.footer__icons {
+    width: 20px;
+}
+
+.footer__icons:hover {
+    color: var(--white);
+} 
+
+@media (min-width: 520px) {
+    .hero_section_content img{
+        max-width: 40px;
+        min-height: 50px;
+        margin-block: 50px;
+    }
+
+    .graphic__design__description,   .photography__description {
+        bottom: 130px;
+    }
+
+    .graphic__design__description h2, .photography__description h2 {
+        margin-bottom: 1.2em;
+    }
+
+    .graphic__design__description p, .photography__description p {
+        font-size: 2rem;
+        line-height: 1.4;
+    }
+}
+
+@media (min-width: 720px) {
+    .graphic__design__description,   .photography__description {
+        bottom: 150px;
+    }
+
+    .graphic__design__description h2, .photography__description h2 {
+        margin-bottom: 1.2em;
+    }
+
+    .graphic__design__description p, .photography__description p {
+        font-size: 2rem;
+        line-height: 1.4;
+    }
+    
+    .graphic__design__description {
+        color: var(--dark-cyan-graphic-design-text);
+    }
+    .photography__description {
+        color: var(--dark-blue-photography-text);
+    }
+}
