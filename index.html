@@ -41,12 +41,12 @@
       <img src="images/icon-hamburger.svg">
     </div>
 
-    <nav class="navigation">
+    <nav class="navigation showHide">
       <ul class="nav__menu">
         <li class="menu__items"><a href="#">About</a></li>
         <li class="menu__items"><a href="#">Services</a></li>
         <li class="menu__items"><a href="#">Projects</a></li>
-        <li class="menu__items"><a href="#">Contact</a></li>
+        <li class="menu__items"><a href="#"><span class="contact">Contact</span></a></li>
       </ul>
     </nav>
   </header>
@@ -234,4 +234,16 @@
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
 </body>
+<script>
+  const hamburger = document.querySelector('#hamburger')
+  
+  hamburger.addEventListener('click', function() {
+    const showHide = document.querySelector('.showHide')
+    showHide.classList.toggle('active')
+    
+  //   if(showHide.style.display === 'none') {
+  //     showHide.style.display = 'block'
+  //   } else (showHide.style.display = 'none');
+  }) 
+</script>
 </html>

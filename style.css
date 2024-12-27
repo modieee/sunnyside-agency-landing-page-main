@@ -54,17 +54,38 @@ body {
 
 .navigation {
     position: absolute;
-    top: 50%;
+    top: 1%;
     left: 50%;
     transform: translate(-50%, 50%);
     width: 300px;
     margin: 0;
+    padding: 1em;
     background-color: var(--white);
+    font-size: 16px;
+}
+.showHide {
+    display: none;
+}
+.showHide.active {
+    display: block;
 }
 
 .menu__items {
     margin-block: 1.2em;
     text-align: center;
+}
+.contact {
+    display: block;
+    width: 100px;
+    height: 40px;
+    background-color: var(--yellow);
+    border-radius: 20px;
+    padding: .7em;
+    text-transform: uppercase;
+    font-family: "Fraunces", serif;
+    font-size: 14px;
+    color: var(--very-dark-desaturated-blue);
+    font-weight: 700;
 }
 .menu__items a {
     color: var(--dark-grayish-blue);
